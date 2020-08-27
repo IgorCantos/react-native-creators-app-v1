@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { noAuto } from '@fortawesome/fontawesome-svg-core';
 
 const styles = StyleSheet.create({
     postContainer: {
@@ -29,6 +30,11 @@ const styles = StyleSheet.create({
 
     postProfCategory: {
         fontSize: 14,
+    },
+
+    dotsMenu: {
+        marginLeft: 'auto',
+        marginRight: 0,
     },
 
     postTitle: {

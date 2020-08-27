@@ -9,10 +9,7 @@ function Home() {
     return (
         <ScrollView>
             <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
-            <UserPost />
+
         </ScrollView>
     )
 }

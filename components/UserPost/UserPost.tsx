@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, Button, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './styles';
 
@@ -20,6 +22,9 @@ function UserPost() {
                         <Text style={styles.postProfCategory}>
                             Ilustração, Humor e Dia a Dia.
                         </Text>
+                    </View>
+                    <View style={styles.dotsMenu}>
+                        <FontAwesomeIcon icon={ faEllipsisV } />
                     </View>
                 </View>
                 <Image 
