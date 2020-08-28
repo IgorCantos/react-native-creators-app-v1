@@ -3,10 +3,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { StyleSheet, Text, View } from 'react-native';
-import Descobrir from './screens/Descobrir/index';
+import Descobrir from './screens/Descobrir';
 
-const { Navigator, Screen} = createStackNavigator();
+const { Navigator, Screen } = createStackNavigator();
 
 export default function App() {
   return (

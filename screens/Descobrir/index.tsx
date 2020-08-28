@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faFilter } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './styles';
-import UserPost from '../../components/UserPost/index';
+import UserPost from '../../components/UserPost';
 
 
 function Descobrir() {
