@@ -6,43 +6,38 @@ import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import styles from './styles';
 
 
-function UserPost() {
+function UserPost(props) {
     return (
         <ScrollView>
             <View style={styles.postContainer}>
                 <View style={styles.postHeader}>
                     <Image 
-                        source={require('../../assets/images/users-posts/0001/0001-profile-image.png')}
+                        source={props.profileImg}
                         style={styles.postProfPic}
                     />
                     <View>
                         <Text style={styles.postProfName}>
-                            One Of Those Days
+                            {props.profileName}
                         </Text>
                         <Text style={styles.postProfCategory}>
-                            Ilustração, Humor e Dia a Dia.
+                            {props.profileCategory}
                         </Text>
                     </View>
                     <View style={styles.dotsMenu}>
-                        <FontAwesomeIcon icon={ faEllipsisV } />
+                        <FontAwesomeIcon icon={faEllipsisV} />
                     </View>
                 </View>
                 <Image 
-                    source={require('../../assets/images/users-posts/0001/0001-post-content.png')}
+                    source={props.postContent}
                     style={styles.postContent}
                 />
                 <Text style={styles.postTitle}>
-                    Encontrei todas as novas armas míticas da temporada 3 do fortnite
+                    {props.postTitle}
                 </Text>
                 <View style={styles.postCategories}>
                     <TouchableOpacity style={styles.postCategoriesBtn}>
                         <Text style={styles.buttonText}>
-                            Ilustração
-                        </Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.postCategoriesBtn}>
-                        <Text style={styles.buttonText}>
-                            Humor
+                            {props.postCategory}
                         </Text>
                     </TouchableOpacity>
                 </View>

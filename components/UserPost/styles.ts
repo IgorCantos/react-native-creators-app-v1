@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
         borderTopColor: '#D3D7DB',
         borderTopWidth: 1,
+        backgroundColor: 'white',
     },
 
     postHeader: {
