@@ -1,15 +1,35 @@
 import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
+import Descobrir from '../Descobrir';
+import Seguindo from '../Seguindo';
 
+const { Navigator, Screen } = createMaterialTopTabNavigator();
 
-function Descobrir() {
+function Home() {
     return (
-        <ScrollView>
-
-        </ScrollView>
+        <Navigator tabBarOptions={{
+            labelStyle: {
+                fontSize: 19,
+                textTransform: 'none',
+                fontWeight: 'bold'
+              },
+            style: {
+                elevation: 10,
+                height: 100,
+                paddingTop: 45,
+            }}}
+        >
+            <Screen 
+                name="Descobrir" 
+                component={Descobrir} 
+            />
+            <Screen 
+                name="Seguindo" 
+                component={Seguindo} 
+            />
+        </Navigator>
     )
 }
 
-export default Descobrir;
+export default Home;
