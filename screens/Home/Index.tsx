@@ -3,12 +3,13 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 import Descobrir from '../Descobrir';
 import Seguindo from '../Seguindo';
+import MyTabs from '../../components/BottomTabsNav';
 
-const { Navigator, Screen } = createMaterialTopTabNavigator();
+const topTab = createMaterialTopTabNavigator();
 
 function Home() {
     return (
-        <Navigator tabBarOptions={{
+        <topTab.Navigator tabBarOptions={{
             labelStyle: {
                 fontSize: 19,
                 textTransform: 'none',
@@ -20,15 +21,15 @@ function Home() {
                 paddingTop: 45,
             }}}
         >
-            <Screen 
+            <topTab.Screen 
                 name="Descobrir" 
                 component={Descobrir} 
             />
-            <Screen 
+            <topTab.Screen 
                 name="Seguindo" 
                 component={Seguindo} 
             />
-        </Navigator>
+        </topTab.Navigator>
     )
 }
 

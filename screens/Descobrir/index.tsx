@@ -3,11 +3,10 @@ import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faFilter } from '@fortawesome/free-solid-svg-icons'
 
-import styles from './styles';
 import UserPost from '../../components/UserPost';
+import styles from './styles';
 
-
-function Descobrir() {
+export default function Descobrir() {
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -64,5 +63,3 @@ function Descobrir() {
         </ScrollView>
     )
 }
-
-export default Descobrir;

@@ -3,8 +3,6 @@ import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 
 import UserPost from '../../components/UserPost';
 
-import styles from './styles';
-
 function Seguindo() {
     return (
         <ScrollView>
