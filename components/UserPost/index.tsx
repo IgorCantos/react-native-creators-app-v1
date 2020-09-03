@@ -8,41 +8,39 @@ import styles from './styles';
 
 function UserPost(props) {
     return (
-        <ScrollView>
-            <View style={styles.postContainer}>
-                <View style={styles.postHeader}>
-                    <Image 
-                        source={props.profileImg}
-                        style={styles.postProfPic}
-                    />
-                    <View>
-                        <Text style={styles.postProfName}>
-                            {props.profileName}
-                        </Text>
-                        <Text style={styles.postProfCategory}>
-                            {props.profileCategory}
-                        </Text>
-                    </View>
-                    <View style={styles.dotsMenu}>
-                        <FontAwesomeIcon icon={faEllipsisV} />
-                    </View>
-                </View>
+        <View style={styles.postContainer}>
+            <View style={styles.postHeader}>
                 <Image 
-                    source={props.postContent}
-                    style={styles.postContent}
+                    source={props.profileImg}
+                    style={styles.postProfPic}
                 />
-                <Text style={styles.postTitle}>
-                    {props.postTitle}
-                </Text>
-                <View style={styles.postCategories}>
-                    <TouchableOpacity style={styles.postCategoriesBtn}>
-                        <Text style={styles.buttonText}>
-                            {props.postCategory}
-                        </Text>
-                    </TouchableOpacity>
+                <View>
+                    <Text style={styles.postProfName}>
+                        {props.profileName}
+                    </Text>
+                    <Text style={styles.postProfCategory}>
+                        {props.profileCategory}
+                    </Text>
+                </View>
+                <View style={styles.dotsMenu}>
+                    <FontAwesomeIcon icon={faEllipsisV} />
                 </View>
             </View>
-        </ScrollView>
+            <Image 
+                source={props.postContent}
+                style={styles.postContent}
+            />
+            <Text style={styles.postTitle}>
+                {props.postTitle}
+            </Text>
+            <View style={styles.postCategories}>
+                <TouchableOpacity style={styles.postCategoriesBtn}>
+                    <Text style={styles.buttonText}>
+                        {props.postCategory}
+                    </Text>
+                </TouchableOpacity>
+            </View>
+        </View>
     )
 }
 

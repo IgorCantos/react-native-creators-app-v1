@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { noAuto } from '@fortawesome/fontawesome-svg-core';
 
 const styles = StyleSheet.create({
     postContainer: {
@@ -40,7 +39,6 @@ const styles = StyleSheet.create({
 
     postTitle: {
         fontSize: 16,
-        textTransform: "uppercase",
         fontWeight: "bold",
         paddingHorizontal: 15,
         paddingVertical: 20,
