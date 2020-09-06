@@ -16,7 +16,9 @@ function SearchItem(props) {
                 style={styles.postTitle}>
                 {props.title}
             </Text>
-            <Text style={styles.postProfName}>
+            <Text 
+                numberOfLines={1} 
+                style={styles.postProfName}>
                 Por {props.profileName}
             </Text>
         </View>

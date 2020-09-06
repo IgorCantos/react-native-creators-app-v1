@@ -1,6 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    top: {
+        paddingTop: 50,
+    },
+
     container: {
         flex: 1,
         flexDirection: 'row',
@@ -8,7 +12,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
     },
 
-    itemContainer: {
+    containerItem: {
         paddingHorizontal: 5,
         maxWidth: '50%',
     },
@@ -17,8 +21,12 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 18,
         paddingLeft: 15,
-        paddingTop: 100,
+        paddingVertical: 30,
         paddingBottom: 15,
+    },
+
+    textHighlight: {
+        color: '#5887F9',
     }
 
 })
