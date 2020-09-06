@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faFire, faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Home from '../../screens/Home';
 import Pesquisar from '../../screens/Pesquisar';
+import NovoPost from '../../screens/NovoPost';
+import Notificacoes from '../../screens/Notificacoes';
+import Perfil from '../../screens/Perfil';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,6 +35,9 @@ function BottomTabsNav() {
     >
       <Tab.Screen name="Ínicio" component={Home} />
       <Tab.Screen name="Pesquisar" component={Pesquisar} />
+      <Tab.Screen name="Novo Post" component={NovoPost} />
+      <Tab.Screen name="Notificações" component={Notificacoes} />
+      <Tab.Screen name="Perfil" component={Perfil} />
     </Tab.Navigator>
   );
 }
