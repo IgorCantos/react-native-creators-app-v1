@@ -3,7 +3,6 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 import Descobrir from '../Descobrir';
 import Seguindo from '../Seguindo';
-import MyTabs from '../../components/BottomTabsNav';
 
 const topTab = createMaterialTopTabNavigator();
 
