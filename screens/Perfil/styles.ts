@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { noAuto } from '@fortawesome/fontawesome-svg-core';
+import { sin } from 'react-native-reanimated';
 
 const styles = StyleSheet.create({
     container: {
@@ -10,6 +11,26 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingHorizontal: 15,
         paddingVertical: 25,
+    },
+
+    whiteBackground: {
+        backgroundColor: 'white',
+    },
+
+    containerA: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        borderTopColor: '#D3D7DB',
+        borderBottomColor: '#D3D7DB',
+        borderWidth: 1,
+        padding: 15,
+        marginVertical: 15,
+    },
+
+    postText: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 20,
     },
 
     newPostsText: {
@@ -30,14 +51,18 @@ const styles = StyleSheet.create({
     profileName: {
         fontWeight: 'bold',
         textAlign: 'center',
-        fontSize: 20,
-        marginTop: 5,
+        fontSize: 24,
+        marginTop: 10,
     },
 
     profileLink: {
         fontWeight: 'bold',
         textAlign: 'center',
         color: '#999999',
+        fontSize: 20,
+    },
+
+    bioInfo: {
         fontSize: 16,
     },
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faFilter } from '@fortawesome/free-solid-svg-icons'
+import { MaterialIcons } from '@expo/vector-icons';
 
 import UserPost from '../../components/UserPost';
 import styles from './styles';
@@ -14,7 +13,7 @@ export default function Descobrir() {
                     <Text style={styles.newPostsText}>8.354 novos posts</Text>
                 </View>
                 <TouchableOpacity style={styles.filterBtn}>
-                    <FontAwesomeIcon icon={faFilter} style={styles.filterBtnIcon} />
+                    <MaterialIcons name="filter-list" size={26} color="#5887F9" />
                     <Text style={styles.filterBtnText}>
                         Filtrar
                     </Text>

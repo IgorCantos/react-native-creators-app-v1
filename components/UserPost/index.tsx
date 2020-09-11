@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+import { MaterialIcons } from '@expo/vector-icons';
 
 import styles from './styles';
 
@@ -23,7 +22,7 @@ function UserPost(props) {
                     </Text>
                 </View>
                 <View style={styles.dotsMenu}>
-                    <FontAwesomeIcon icon={faEllipsisV} />
+                    <MaterialIcons name="more-vert" size={26} color="#929292" />
                 </View>
             </View>
             <Image 

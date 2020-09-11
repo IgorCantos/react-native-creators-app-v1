@@ -2,8 +2,8 @@ import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { View, Text, Image } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faFilter } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesome } from '@expo/vector-icons';
 
 const topTab = createMaterialTopTabNavigator();
 
@@ -40,7 +40,7 @@ function MeuPerfil() {
 function Perfil() {
     return (
         <ScrollView>
-            <View>
+            <View style={styles.whiteBackground}>
                 <Image 
                     style={styles.coverImg}
                     source={require('../../assets/images/users-posts/0004/0004-coover-img.png')}
@@ -62,6 +62,29 @@ function Perfil() {
                         </Text>
                     </TouchableOpacity>
                 </View>
+                <View style={styles.containerA}>
+                    <View>
+                        <Text style={styles.postText}>
+                            356
+                        </Text>
+                        <Text>
+                            Posts
+                        </Text>
+                    </View>
+                    <View>
+                        <Text style={styles.postText}>
+                            860
+                        </Text>
+                        <Text>
+                            Seguidores
+                        </Text>
+                    </View>
+                </View>
+                <View style={styles.container}>
+                    <Text style={styles.bioInfo}>
+                        Criador do Canal Nostalgia, apaixonado por Ciência e pelo Cosmos. Astronauta da Nasa e apresentador.
+                    </Text>
+                </View>
             </View>
         </ScrollView>
     )
@@ -75,7 +98,7 @@ function Posts() {
                     <Text style={styles.newPostsText}>356 posts</Text>
                 </View>
                 <TouchableOpacity style={styles.filterBtn}>
-                    <FontAwesomeIcon icon={faFilter} style={styles.filterBtnIcon} />
+                    <FontAwesome name="filter"/>
                     <Text style={styles.filterBtnText}>
                         Gerenciar
                     </Text>

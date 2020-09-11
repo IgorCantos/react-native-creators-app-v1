@@ -1,8 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faFire, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
 import Home from '../../screens/Home';
 import Pesquisar from '../../screens/Pesquisar';
 import NovoPost from '../../screens/NovoPost';
@@ -14,23 +14,36 @@ const Tab = createBottomTabNavigator();
 function BottomTabsNav() {
   return (
     <Tab.Navigator
+      initialRouteName="Ínicio"
       screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
+        tabBarIcon: ({ focused, color }) => {
           let iconName;
-
-          if (route.name === 'Home') {
+          if (route.name === 'Ínicio') {
             iconName = focused
-              ? 'faFire'
-              : 'faFire';
-          } else if (route.name === 'Settings') {
-            iconName = focused ? 'faFire' : 'faFire';
+              iconName = 'star-border'
+          } else if (route.name === 'Pesquisar') {
+            iconName = focused
+              iconName = 'search'
+          } else if (route.name === 'Novo Post') {
+            iconName = focused
+              iconName = 'add-circle-outline'
+          } else if (route.name === 'Notificações') {
+            iconName = focused
+              iconName = 'notifications-none'
+          } else if (route.name === 'Perfil') {
+            iconName = focused
+              iconName = 'person-outline'
           }
-          return <FontAwesomeIcon icon={faFire} size={size} color={color} />;
+          return <MaterialIcons name={iconName} size={26} color={color} />;
         },
       })}
       tabBarOptions={{
         activeTintColor: '#5887F9',
         inactiveTintColor: '#999999',
+        labelStyle: {
+          fontSize: 11,
+          marginBottom: 2,
+        },
       }}
     >
       <Tab.Screen name="Ínicio" component={Home} />
