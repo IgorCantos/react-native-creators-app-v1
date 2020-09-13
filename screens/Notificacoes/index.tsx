@@ -17,8 +17,7 @@ function Notificacoes() {
               },
             style: {
                 elevation: 10,
-                height: 100,
-                paddingTop: 45,
+                paddingTop: 10,
             }}}
         >
             <topTab.Screen 

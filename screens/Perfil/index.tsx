@@ -20,8 +20,7 @@ function MeuPerfil() {
             },
             style: {
                 elevation: 10,
-                height: 100,
-                paddingTop: 45,
+                paddingTop: 10,
             }
         }}
         >
