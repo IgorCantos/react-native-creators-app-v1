@@ -3,6 +3,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 
+
 import Home from '../../screens/Home';
 import Pesquisar from '../../screens/Pesquisar';
 import NovoPost from '../../screens/NovoPost';
