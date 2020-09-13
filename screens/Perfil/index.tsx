@@ -3,7 +3,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { View, Text, Image } from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
-import { FontAwesome } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 
 const topTab = createMaterialTopTabNavigator();
 
@@ -98,7 +98,7 @@ function Posts() {
                     <Text style={styles.newPostsText}>356 posts</Text>
                 </View>
                 <TouchableOpacity style={styles.filterBtn}>
-                    <FontAwesome name="filter"/>
+                    <MaterialIcons name="filter-list" size={26} color="#5887F9" />
                     <Text style={styles.filterBtnText}>
                         Gerenciar
                     </Text>

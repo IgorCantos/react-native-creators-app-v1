@@ -15,10 +15,11 @@ function BottomTabsNav() {
   return (
     <bottomTabs.Navigator
       initialRouteName="Ínicio"
+      backBehavior="history"
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color }) => {
           let iconName;
-          if (route.name === 'Ínicio') {
+          if (route.name === 'Home') {
             iconName = focused
               iconName = 'star-border'
           } else if (route.name === 'Pesquisar') {
@@ -46,7 +47,7 @@ function BottomTabsNav() {
         },
       }}
     >
-      <bottomTabs.Screen name="Ínicio" component={Home} />
+      <bottomTabs.Screen name="Home" component={Home} />
       <bottomTabs.Screen name="Pesquisar" component={Pesquisar} />
       <bottomTabs.Screen name="Novo Post" component={NovoPost} />
       <bottomTabs.Screen name="Notificações" component={Notificacoes} />
