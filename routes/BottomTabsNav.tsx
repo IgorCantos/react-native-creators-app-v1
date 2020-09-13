@@ -3,18 +3,17 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 
+import Home from '../screens/Home';
+import Pesquisar from '../screens/Pesquisar';
+import NovoPost from '../screens/NovoPost';
+import Notificacoes from '../screens/Notificacoes';
+import Perfil from '../screens/Perfil';
 
-import Home from '../../screens/Home';
-import Pesquisar from '../../screens/Pesquisar';
-import NovoPost from '../../screens/NovoPost';
-import Notificacoes from '../../screens/Notificacoes';
-import Perfil from '../../screens/Perfil';
-
-const Tab = createBottomTabNavigator();
+const bottomTabs = createBottomTabNavigator();
 
 function BottomTabsNav() {
   return (
-    <Tab.Navigator
+    <bottomTabs.Navigator
       initialRouteName="Ínicio"
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color }) => {
@@ -47,12 +46,12 @@ function BottomTabsNav() {
         },
       }}
     >
-      <Tab.Screen name="Ínicio" component={Home} />
-      <Tab.Screen name="Pesquisar" component={Pesquisar} />
-      <Tab.Screen name="Novo Post" component={NovoPost} />
-      <Tab.Screen name="Notificações" component={Notificacoes} />
-      <Tab.Screen name="Perfil" component={Perfil} />
-    </Tab.Navigator>
+      <bottomTabs.Screen name="Ínicio" component={Home} />
+      <bottomTabs.Screen name="Pesquisar" component={Pesquisar} />
+      <bottomTabs.Screen name="Novo Post" component={NovoPost} />
+      <bottomTabs.Screen name="Notificações" component={Notificacoes} />
+      <bottomTabs.Screen name="Perfil" component={Perfil} />
+    </bottomTabs.Navigator>
   );
 }
 
