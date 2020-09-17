@@ -11,18 +11,28 @@ import Pesquisar from '../screens/Pesquisar';
 import NovoPost from '../screens/NovoPost';
 import Notificacoes from '../screens/Notificacoes';
 import Perfil from '../screens/Perfil';
+import Filtrar from '../screens/Filtrar';
+import { TextInput } from 'react-native-gesture-handler';
+import { preventAutoHide } from 'expo/build/launch/SplashScreen';
 
 const HomeStack = createStackNavigator();
 
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen 
-          name="Home" 
-          component={Home}
-          options={{ 
-            headerTitleAlign: 'center'
-          }} 
+      <HomeStack.Screen
+        name="Home"
+        component={Home}
+        options={{
+          headerTitleAlign: 'center'
+        }}
+      />
+      <HomeStack.Screen
+        name="Filtrar"
+        component={Filtrar}
+        options={{
+          headerTitleAlign: 'center'
+        }}
       />
       {/* Filtrar aqui */}
     </HomeStack.Navigator>
@@ -34,13 +44,32 @@ const PesquisarStack = createStackNavigator();
 function PesquisarStackScreen() {
   return (
     <PesquisarStack.Navigator>
-      <PesquisarStack.Screen 
-          name="Pesquisar" 
-          component={Pesquisar} 
-          options={{ 
-            headerTitleAlign: 'center'
-          }} 
-    />
+      <PesquisarStack.Screen
+        name="Pesquisar"
+        component={Pesquisar}
+        options={{
+          headerTitle: "",
+          // Devem existir formas melhores de se fazer o que fiz abaixo.
+          // Aceito sugestões para melhorar :)
+          headerRight: () => (
+            <TextInput
+                style={{ 
+                    width: 300, 
+                    height: 40,
+                    paddingHorizontal: 15,
+                    fontSize: 16,
+                    marginRight: 30,
+                    backgroundColor: '#EEECEC', 
+                    borderColor: 'transparent',
+                    borderWidth: 1,
+                    borderRadius: 15,
+                  }}
+                placeholder={'Digite aqui para pesquisar...'}
+                placeholderTextColor={'#707070'}
+            />
+          ),
+        }}
+      />
     </PesquisarStack.Navigator>
   );
 }
@@ -50,12 +79,12 @@ const NovoPostStack = createStackNavigator();
 function NovoPostScreen() {
   return (
     <NovoPostStack.Navigator>
-      <NovoPostStack.Screen 
-          name="Novo Post" 
-          component={NovoPost} 
-          options={{ 
-            headerTitleAlign: 'center'
-          }}
+      <NovoPostStack.Screen
+        name="Novo Post"
+        component={NovoPost}
+        options={{
+          headerTitleAlign: 'center'
+        }}
       />
     </NovoPostStack.Navigator>
   );
@@ -66,12 +95,12 @@ const NotificacoesStack = createStackNavigator();
 function NotificacoesScreen() {
   return (
     <NotificacoesStack.Navigator>
-      <NotificacoesStack.Screen 
-          name="Notificações" 
-          component={Notificacoes}
-          options={{ 
-            headerTitleAlign: 'center'
-          }} 
+      <NotificacoesStack.Screen
+        name="Notificações"
+        component={Notificacoes}
+        options={{
+          headerTitleAlign: 'center'
+        }}
       />
     </NotificacoesStack.Navigator>
   );
@@ -82,12 +111,12 @@ const PerfilStack = createStackNavigator();
 function PerfilScreen() {
   return (
     <PerfilStack.Navigator>
-      <PerfilStack.Screen 
-          name="Meu Perfil" 
-          component={Perfil}
-          options={{ 
-            headerTitleAlign: 'center'
-          }}
+      <PerfilStack.Screen
+        name="Meu Perfil"
+        component={Perfil}
+        options={{
+          headerTitleAlign: 'center'
+        }}
       />
     </PerfilStack.Navigator>
   );

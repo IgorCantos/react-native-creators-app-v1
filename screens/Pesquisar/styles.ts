@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    top: {
-        paddingTop: 50,
+    bgWhite: {
+        backgroundColor: 'white',
     },
-
+    
     container: {
         flex: 1,
         flexDirection: 'row',
