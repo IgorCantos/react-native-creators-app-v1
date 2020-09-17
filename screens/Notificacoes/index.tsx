@@ -3,9 +3,10 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { View, Text, Image } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
-const topTab = createMaterialTopTabNavigator();
+import UserNotification from '../../components/Notifications/UserNotification';
+import UserMessage from '../../components/Notifications/UserMessage';
 
-import styles from './styles';
+const topTab = createMaterialTopTabNavigator();
 
 function Notificacoes() {
     return (
@@ -14,19 +15,20 @@ function Notificacoes() {
                 fontSize: 19,
                 textTransform: 'none',
                 fontWeight: 'bold'
-              },
+            },
             style: {
                 elevation: 10,
                 paddingTop: 10,
-            }}}
+            }
+        }}
         >
-            <topTab.Screen 
-                name="Gerais" 
-                component={Gerais} 
+            <topTab.Screen
+                name="Gerais"
+                component={Gerais}
             />
-            <topTab.Screen 
-                name="Mensagens" 
-                component={Mensagens} 
+            <topTab.Screen
+                name="Mensagens"
+                component={Mensagens}
             />
         </topTab.Navigator>
     )
@@ -35,6 +37,21 @@ function Notificacoes() {
 function Gerais() {
     return (
         <ScrollView>
+            <UserNotification
+                profileImg={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
+                notificationMsg="Igor Santos começou a seguir o seu perfil."
+                time={"Há 16 m"}
+            />
+            <UserNotification
+                profileImg={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
+                notificationMsg="Igor Santos deixou de seguir o seu perfil."
+                time={"Há 16 m"}
+            />
+            <UserNotification
+                profileImg={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
+                notificationMsg="Igor Santos começou a seguir o seu perfil."
+                time="Há 16 m"
+            />
         </ScrollView>
     )
 }
@@ -42,74 +59,24 @@ function Gerais() {
 function Mensagens() {
     return (
         <ScrollView>
-            <View style={styles.container}>
-                <Image 
-                    source={require('../../assets/images/users-posts/0007/0007-profile-image.png')}
-                    style={styles.postProfPic}
-                />
-                <View>
-                    <Text style={styles.postProfName}>
-                        Júlia Almeida
-                    </Text>
-                    <Text style={styles.postProfCategory}>
-                        Lorem Ipson dolor sit dolar
-                    </Text>
-                </View>
-                <View style={styles.msgHour}>
-                    <Text>Há 10 m</Text>
-                </View>
-            </View>
-            <View style={styles.container}>
-                <Image 
-                    source={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
-                    style={styles.postProfPic}
-                />
-                <View>
-                    <Text style={styles.postProfName}>
-                        Júlia Almeida
-                    </Text>
-                    <Text style={styles.postProfCategory}>
-                        Lorem Ipson dolor sit dolar
-                    </Text>
-                </View>
-                <View style={styles.msgHour}>
-                    <Text>Há 10 m</Text>
-                </View>
-            </View>
-            <View style={styles.container}>
-                <Image 
-                    source={require('../../assets/images/users-posts/0005/0005-profile-image.png')}
-                    style={styles.postProfPic}
-                />
-                <View>
-                    <Text style={styles.postProfName}>
-                        Júlia Almeida
-                    </Text>
-                    <Text style={styles.postProfCategory}>
-                        Lorem Ipson dolor sit dolar
-                    </Text>
-                </View>
-                <View style={styles.msgHour}>
-                    <Text>Há 10 m</Text>
-                </View>
-            </View>
-            <View style={styles.container}>
-                <Image 
-                    source={require('../../assets/images/users-posts/0004/0004-profile-image.png')}
-                    style={styles.postProfPic}
-                />
-                <View>
-                    <Text style={styles.postProfName}>
-                        Júlia Almeida
-                    </Text>
-                    <Text style={styles.postProfCategory}>
-                        Lorem Ipson dolor sit dolar
-                    </Text>
-                </View>
-                <View style={styles.msgHour}>
-                    <Text>Há 10 m</Text>
-                </View>
-            </View>
+            <UserMessage
+                profileImg={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
+                userName="Igor Santos"
+                userMsg="Lorem Ipson dolor sit dolar"
+                time="Há 10 m"
+            />
+            <UserMessage
+                profileImg={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
+                userName="Igor Santos"
+                userMsg="Lorem Ipson dolor sit dolar"
+                time="Há 10 m"
+            />
+            <UserMessage
+                profileImg={require('../../assets/images/users-posts/0006/0006-profile-image.png')}
+                userName="Igor Santos"
+                userMsg="Lorem Ipson dolor sit dolar"
+                time="Há 10 m"
+            />
         </ScrollView>
     )
 }

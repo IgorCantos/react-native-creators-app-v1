@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     msgHour: {
         marginLeft: 'auto',
         marginRight: 0,
-    }
+    },
 })
 
 export default styles;
