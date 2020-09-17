@@ -4,15 +4,19 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 import UserPost from '../../components/UserPost';
 import styles from './styles';
+import { FadeFromBottomAndroid } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionPresets';
 
-export default function Descobrir() {
+export default function Descobrir({ navigation }) {
     return (
         <ScrollView>
             <View style={styles.container}>
                 <View>
                     <Text style={styles.newPostsText}>8.354 novos posts</Text>
                 </View>
-                <TouchableOpacity style={styles.filterBtn}>
+                <TouchableOpacity 
+                    style={styles.filterBtn}
+                    onPress={() => navigation.navigate('Filtrar')}
+                >
                     <MaterialIcons name="filter-list" size={26} color="#5887F9" />
                     <Text style={styles.filterBtnText}>
                         Filtrar
