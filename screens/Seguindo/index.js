@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
-
+import { ScrollView } from 'react-native';
 import UserPost from '../../components/UserPost';
 
 function Seguindo() {
