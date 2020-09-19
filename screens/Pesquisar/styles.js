@@ -1,18 +1,16 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    bgWhite: {
+    container: {
         backgroundColor: 'white',
     },
     
-    container: {
-        flex: 1,
+    postsRow: {
         flexDirection: 'row',
-        flexBasis: 1,
         paddingHorizontal: 15,
     },
 
-    containerItem: {
+    postsContainer: {
         paddingHorizontal: 5,
         maxWidth: '50%',
     },
@@ -25,7 +23,7 @@ const styles = StyleSheet.create({
         paddingBottom: 15,
     },
 
-    textHighlight: {
+    textBlue: {
         color: '#5887F9',
     }
 

@@ -4,7 +4,7 @@ import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 
-function SearchItem(props) {
+function SearchedPost(props) {
     return (
         <View>
             <Image 
@@ -25,4 +25,4 @@ function SearchItem(props) {
     )
 }
 
-export default SearchItem;
+export default SearchedPost;
