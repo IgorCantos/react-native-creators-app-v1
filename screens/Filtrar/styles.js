@@ -6,37 +6,36 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
 
-    title: {
+    sectionTitle: {
         marginVertical: 20,
         fontWeight: 'bold',
         fontSize: 20,
     },
 
-    checkboxContainer: {
+    checkBoxContainer: {
         flexDirection: 'row',
     },
 
-    checkbox: {
+    checkBox: {
         marginLeft: 10,
     },
 
-    checkboxText: {
+    checkBoxText: {
         fontSize: 18,
         paddingTop: 5,
         marginRight: 15,
     },
 
-    containerItem: {
+    categoryItem: {
+        justifyContent: 'center',
+        alignItems: 'center',
         margin: 1,
         width: '32%',
         height: 100,
         backgroundColor: 'white',
-
-        justifyContent: 'center',
-        alignItems: 'center',
     },
 
-    containerItemText: {
+    categoryItemText: {
         fontSize: 15,
         marginTop: 5,
     },
@@ -44,6 +43,13 @@ const styles = StyleSheet.create({
     active: {
         borderColor: '#5887F9',
         borderWidth: 2,
+    },
+
+    loading: {
+        textAlign: 'center',
+        paddingVertical: 20,
+        fontSize: 20,
+        fontWeight: 'bold',
     }
 })
 
