@@ -2,16 +2,15 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        alignItems: 'center',
-        backgroundColor: 'white',
         flexDirection: 'row',
+        alignItems: 'center',
         justifyContent: "space-between",
+        backgroundColor: 'white',
         paddingHorizontal: 15,
         paddingVertical: 25,
     },
 
-    newPostsText: {
+    newPostsCounter: {
         fontSize: 16
     },
 
@@ -31,11 +30,6 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         paddingLeft: 10,
     },
-
-    filterBtnIcon: {
-        color: '#5887F9',
-        paddingRight: 10,
-    }
 })
 
 export default styles;

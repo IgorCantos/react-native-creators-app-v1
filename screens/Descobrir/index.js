@@ -1,17 +1,17 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-
 import UserPost from '../../components/UserPost';
 import styles from './styles';
-import { FadeFromBottomAndroid } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionPresets';
 
 export default function Descobrir({ navigation }) {
     return (
         <ScrollView>
             <View style={styles.container}>
                 <View>
-                    <Text style={styles.newPostsText}>8.354 novos posts</Text>
+                    <Text style={styles.newPostsCounter}>
+                        8.354 novos posts
+                    </Text>
                 </View>
                 <TouchableOpacity 
                     style={styles.filterBtn}
