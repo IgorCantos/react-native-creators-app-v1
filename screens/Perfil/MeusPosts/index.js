@@ -11,7 +11,7 @@ function MeusPosts() {
             <View style={styles.container}>
                 <View>
                     <Text style={styles.newPostsCounter}>
-                        8.354 novos posts
+                        Você possui 4 posts
                     </Text>
                 </View>
                 <TouchableOpacity 
@@ -35,58 +35,26 @@ function MeusPosts() {
                 profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
                 userName="Canal Nostalgia"
                 profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
+                postContent={require('../../../assets/images/users-posts/0004/0004-post-content-1.png')}
+                postTitle="Você sabe como surgiu a lua? - Nostalgia Ciência"
                 postCategory="Ciência"
             />
             <UserPost
                 profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
                 userName="Canal Nostalgia"
                 profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
+                postContent={require('../../../assets/images/users-posts/0004/0004-post-content-2.png')}
+                postTitle="Albert Einstein: um dos maiores GÊNIOS que já viveram | Nostalgia História"
                 postCategory="Ciência"
             />
             <UserPost
                 profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
                 userName="Canal Nostalgia"
                 profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
+                postContent={require('../../../assets/images/users-posts/0004/0004-post-content-3.png')}
+                postTitle="COMO os DINOSSAUROS foram EXTINTOS? | Nostalgia Ciência"
                 postCategory="Ciência"
-            />            
-            <UserPost
-                profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
-                userName="Canal Nostalgia"
-                profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
-                postCategory="Ciência"
-            />
-            <UserPost
-                profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
-                userName="Canal Nostalgia"
-                profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
-                postCategory="Ciência"
-            />            
-            <UserPost
-                profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
-                userName="Canal Nostalgia"
-                profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
-                postCategory="Ciência"
-            />
-            <UserPost
-                profileImg={require('../../../assets/images/users-posts/0004/0004-profile-image.png')}
-                userName="Canal Nostalgia"
-                profileCategory="Ciência, História e Cultura Nerd."
-                postContent={require('../../../assets/images/users-posts/0004/0004-post-content.png')}
-                postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
-                postCategory="Ciência"
-            />
+            /> 
         </ScrollView>
     )
 }
