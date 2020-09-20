@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'lightgrey'
     },
 
-    profileName: {
+    userName: {
         fontWeight: "bold",
         fontSize: 16,
     },

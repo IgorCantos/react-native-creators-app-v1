@@ -14,8 +14,8 @@ function UserPost(props) {
                     style={styles.profileImg}
                 />
                 <View>
-                    <Text style={styles.profileName}>
-                        {props.profileName}
+                    <Text style={styles.userName}>
+                        {props.userName}
                     </Text>
                     <Text style={styles.profileCategory}>
                         {props.profileCategory}

@@ -112,7 +112,7 @@ function PerfilScreen() {
   return (
     <PerfilStack.Navigator>
       <PerfilStack.Screen
-        name="Meu Perfil"
+        name="Perfil"
         component={Perfil}
         options={{
           headerTitleAlign: 'center'
