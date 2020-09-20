@@ -32,7 +32,9 @@
 
 # Screenshots
 
-Pendente
+![](./assets/github-gifs/home.gif)
+![](./assets/github-gifs/navigation.gif)
+![](./assets/github-gifs/perfil.gif)
 
 # Design
 
