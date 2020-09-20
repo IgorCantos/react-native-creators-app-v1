@@ -8,19 +8,19 @@ function UserMessage(props) {
         <View style={styles.container}>
             <Image
                 source={props.profileImg}
-                style={styles.postProfPic}
+                style={styles.profileImg}
             />
             <View>
-                <Text style={styles.postProfName}>
+                <Text style={styles.userName}>
                     {props.userName}
                 </Text>
-                <Text style={styles.postProfCategory}>
+                <Text style={styles.profileCategory}>
                     {props.userMsg}
                 </Text>
             </View>
-            <View style={styles.msgHour}>
+            <View style={styles.msgTime}>
                 <Text>
-                    {props.time}
+                    {props.msgTime}
                 </Text>
             </View>
         </View>

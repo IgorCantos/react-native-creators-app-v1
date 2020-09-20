@@ -12,8 +12,13 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
     },
     
-    photoContainer: {
+    profileImgContainer: {
         width: '20%',
+    },
+    
+    profileImg: {
+        width: 50,
+        height: 50,
     },
 
     msgContainer: {
@@ -21,21 +26,22 @@ const styles = StyleSheet.create({
         paddingRight: 5,
     },
 
-    msgContainerText: {
+    notificationMsg: {
         fontSize: 16,
         fontWeight: 'bold',
         paddingRight: 5,
     },
 
-    hourContainer: {
+    msgTimeContainer: {
         width: '15%',
         textAlign: 'right',
     },
 
-    hourContainerText: {
+    msgTime: {
         fontSize: 12,
         textAlign: 'right',
-    }
+    },
+
 })
 
 export default styles;

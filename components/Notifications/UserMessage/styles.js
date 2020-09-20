@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
     },
 
-    postProfPic: {
+    profileImg: {
         width: 50,
         height: 50,
         borderRadius: 50,
@@ -20,16 +20,16 @@ const styles = StyleSheet.create({
         backgroundColor: 'lightgrey'
     },
 
-    postProfName: {
+    userName: {
         fontWeight: "bold",
         fontSize: 16,
     },
 
-    postProfCategory: {
+    profileCategory: {
         fontSize: 14,
     },
 
-    msgHour: {
+    msgTime: {
         marginLeft: 'auto',
         marginRight: 0,
     },

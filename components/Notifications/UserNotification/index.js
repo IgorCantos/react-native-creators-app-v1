@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { View, Text, Image } from 'react-native';
 
 import styles from './styles';
 
@@ -8,20 +7,20 @@ import styles from './styles';
 function UserNotification(props) {
     return (
         <View style={styles.container}>
-            <View style={styles.photoContainer}>
+            <View style={styles.profileImgContainer}>
                 <Image
                     source={props.profileImg}
-                    style={styles.postProfPic}
+                    style={styles.profileImg}
                 />
             </View>
             <View style={styles.msgContainer}>
-                <Text style={styles.msgContainerText}>
+                <Text style={styles.notificationMsg}>
                     {props.notificationMsg}
                 </Text>
             </View>
-            <View style={styles.hourContainer}>
-                <Text style={styles.hourContainerText}>
-                    {props.time}
+            <View style={styles.msgTimeContainer}>
+                <Text style={styles.msgTime}>
+                    {props.msgTime}
                 </Text>
             </View>
         </View>

@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
     },
 
-    postProfPic: {
+    profileImg: {
         width: 50,
         height: 50,
         borderRadius: 50,
@@ -23,12 +23,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'lightgrey'
     },
 
-    postProfName: {
+    profileName: {
         fontWeight: "bold",
         fontSize: 16,
     },
 
-    postProfCategory: {
+    profileCategory: {
         fontSize: 14,
     },
 

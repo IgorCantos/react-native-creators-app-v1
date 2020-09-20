@@ -11,13 +11,13 @@ function UserPost(props) {
             <View style={styles.postHeader}>
                 <Image 
                     source={props.profileImg}
-                    style={styles.postProfPic}
+                    style={styles.profileImg}
                 />
                 <View>
-                    <Text style={styles.postProfName}>
+                    <Text style={styles.profileName}>
                         {props.profileName}
                     </Text>
-                    <Text style={styles.postProfCategory}>
+                    <Text style={styles.profileCategory}>
                         {props.profileCategory}
                     </Text>
                 </View>
