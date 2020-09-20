@@ -22,7 +22,7 @@
 - Aprender como funciona a arquitetura básica de pastas de um app
 - Aprender navegação entre telas
 
-# Tecnológias utilizadas
+# Tecnologias utilizadas
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
