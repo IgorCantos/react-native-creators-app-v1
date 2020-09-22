@@ -48,7 +48,7 @@ Quer ver o primeiro protótipo interativo da plataforma em Adobe Xd?
 # Como rodar?
 
 1. Instale o NodeJS na sua máquina
-2. No seu terminal digite: ```yarn install expo-cli --global``` caso use yarn ou ```npm install expo-cli --global``` caso use npm
+2. No seu terminal digite: ```yarn add global expo-cli``` caso use yarn ou ```npm install expo-cli --global``` caso use npm
 3. Baixe o App da Expo no seu celular: [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR) ou [IOS](https://apps.apple.com/br/app/expo-client/id982107779)
 4. No seu terminal digite: ```expo start```
 5. Abre o aplicativo da Expo no seu celular
