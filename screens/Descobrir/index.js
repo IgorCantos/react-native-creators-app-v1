@@ -25,7 +25,7 @@ export default function Descobrir({ navigation }) {
             </View>
             <UserPost 
                 profileImg={require('../../assets/images/users-posts/0003/0003-profile-image.png')}
-                profileName="Flakes Power"
+                userName="Flakes Power"
                 profileCategory="Games."
                 postContent={require('../../assets/images/users-posts/0003/0003-post-content.png')}
                 postTitle="ENCONTREI TODAS AS NOVAS ARMAS MÍTICAS DA TEMPORADA 3 DO FORTNITE"
@@ -33,7 +33,7 @@ export default function Descobrir({ navigation }) {
             />
             <UserPost 
                 profileImg={require('../../assets/images/users-posts/0001/0001-profile-image.png')}
-                profileName="One of Those Days"
+                userName="One of Those Days"
                 profileCategory="Ilustração, Humor e Dia a Dia."
                 postContent={require('../../assets/images/users-posts/0001/0001-post-content.png')}
                 postTitle="Encontrei todas as novas armas míticas da temporada 3 do fortnite"
@@ -41,7 +41,7 @@ export default function Descobrir({ navigation }) {
             />
             <UserPost 
                 profileImg={require('../../assets/images/users-posts/0002/0002-profile-image.png')}
-                profileName="Coisa de Nerd"
+                userName="Coisa de Nerd"
                 profileCategory="Tecnologia e Cultura Nerd."
                 postContent={require('../../assets/images/users-posts/0002/0002-post-content.png')}
                 postTitle="OLHA O QUE A QUARENTENA FAZ! - Hora de Pôr Café (Parte 64)"
@@ -49,7 +49,7 @@ export default function Descobrir({ navigation }) {
             />
             <UserPost 
                 profileImg={require('../../assets/images/users-posts/0004/0004-profile-image.png')}
-                profileName="Canal Nostalgia"
+                userName="Canal Nostalgia"
                 profileCategory="Ciência, História e Cultura Nerd."
                 postContent={require('../../assets/images/users-posts/0004/0004-post-content.png')}
                 postTitle="A origem do universo | Teoria do BIG BANG - Nostalgia Ciência"
@@ -57,7 +57,7 @@ export default function Descobrir({ navigation }) {
             />
             <UserPost 
                 profileImg={require('../../assets/images/users-posts/0005/0005-profile-image.png')}
-                profileName="KamiKat"
+                userName="KamiKat"
                 profileCategory="Games."
                 postContent={require('../../assets/images/users-posts/0005/0005-post-content.png')}
                 postTitle="DERRETENDO O TIME INIMIGO INTEIRO COM MALZAHAR | Kami"

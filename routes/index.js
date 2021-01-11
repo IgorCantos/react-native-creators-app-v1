@@ -135,7 +135,7 @@ export default function App() {
             let iconName;
             if (route.name === 'Home') {
               iconName = focused
-              iconName = 'star-border'
+              iconName = 'home'
             } else if (route.name === 'Pesquisar') {
               iconName = focused
               iconName = 'search'
@@ -162,9 +162,9 @@ export default function App() {
         }}
       >
         <BottomTab.Screen name="Home" component={HomeStackScreen} />
-        <BottomTab.Screen name="Pesquisar" component={PesquisarStackScreen} />
-        <BottomTab.Screen name="Novo Post" component={NovoPostScreen} />
         <BottomTab.Screen name="Notificações" component={NotificacoesScreen} />
+        <BottomTab.Screen name="Novo Post" component={NovoPostScreen} />
+        <BottomTab.Screen name="Pesquisar" component={PesquisarStackScreen} />
         <BottomTab.Screen name="Perfil" component={PerfilScreen} />
       </BottomTab.Navigator>
     </NavigationContainer>
