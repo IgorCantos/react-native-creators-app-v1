@@ -40,7 +40,7 @@
 
 Quer ver o primeiro protótipo interativo da plataforma em Adobe Xd?
 
-- [Clique Aqui](https://xd.adobe.com/view/4eb27dc0-110c-4dc9-b20d-3e9cfb022d2f-1be1/?fullscreen)
+- [Clique Aqui](https://xd.adobe.com/view/6ff57882-f88a-45fd-9936-ad4ccbbc23d2-3aa6/?fullscreen)
 
 
 <br />
